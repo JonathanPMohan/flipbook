@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Punch-Out logo" class="punch_out_logo" src="./assets/punch_out_logo.png">
+    <Flipbook />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Flipbook from './components/Flipbook.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Flipbook
   }
 }
 </script>
@@ -22,7 +22,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #31e90c;
   margin-top: 60px;
+  background: #000;
+  background-image: url('~@/assets/punch_out_BKG.png');
+}
+.punch_out_logo {
+  width: 75%;
 }
 </style>
